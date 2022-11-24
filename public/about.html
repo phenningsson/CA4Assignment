@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- Link to Bootstrap CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link to CDN link for custom icons, in this case Instagram & Facebook are used, 
+    found at W3Schools: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Pontus Henningsson</title>
+  </head>
+
+  <body class="backgroundImage">
+    <!-- Navbar created in order to follow Task 9 with responsive Bootstrap. 
+             Made with help from W3Schools, se link:https://www.w3schools.com/bootstrap5/bootstrap_navbar.php -->
+             <nav class="navbar navbar-expand-sm" id="top">
+              <div class="container-fluid justify-content-center">
+                <ul class="navbar-nav ">
+                  <li class="nav-item"><a class="nav-link navTextStyle" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link active navTextStyle" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link navTextStyle" href="chat.html">Chat</a></li>
+                  <li class="nav-item"><a class="nav-link fa fa-envelope" href="mailto:phenningsson@me.com"></a></li>
+                  <li class="nav-item"><a class="nav-link fa fa-instagram" href="https://www.instagram.com/pontushenningsson/"></a></li>
+                  <li class="nav-item"><a class="nav-link fa fa-facebook" href="https://www.facebook.com/profile.php?id=100009169716309"></a></li>
+                  <li class="nav-item"><a class="nav-link fa fa-github" href="https://github.com/phenningsson"></a></li>
+                </ul>
+              </div>
+            </nav>
+ 
+ 
+
+    <div class="container">
+        <div class="row columnBG">
+            <div class="col-md-8">
+              
+                  <h3 class="resumeHeaderText"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h3>
+                  <h5 class="resumeContentTextBold">
+                    TOC Technician - Allente, Stockholm, Sweden
+                  </h5>
+                    <ul class="resumeContentText">
+                      <li><i class="fa fa-calendar" aria-hidden="true"></i> April 2022 - Currently  </li>
+                      <li>Working as a technician at Nordic television company Allente at the Technical Operations Center (TOC)</li>
+                      <li>Tasks include monitoring of Allente's services, solving outages and providing technical support for advanced issues</li>
+                      <li>Acting like the bridge between Customer Service and the rest of the company</li>
+                      <li>A typical incident assigned to TOC could be that Norweigan customers cannot log into Allente's streaming services</li>      
+                    </ul>
+                    <br>
+
+                    <h5 class="resumeContentTextBold">
+                    IT-Support - Royal Institute of Art, Stockholm, Sweden
+                    </h5>
+                    <ul class="resumeContentText">
+                      <li><i class="fa fa-calendar" aria-hidden="true"></i> Aug 2021 - Mars 2022 </li>
+                      <li>Providing first-and second line IT-support to both students and staff</li>
+                      <li>Database- and server management</li>
+                      <li>Installation and maintenance for both software and hardware</li>
+                    </ul>
+               
+                    <h3 class="resumeHeaderText"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h3>
+                  <h5 class="resumeContentTextBold">
+                    Department of Computer and Systems Science,<br>Stockholm University, Sweden
+                  </h5>
+                  <ul class="resumeContentText">
+                    <li><i class="fa fa-calendar" aria-hidden="true"></i> Aug 2020 - Currently </li>
+                    <li> Bachelor's Degree in Systems Science </li>
+                    </ul>
+
+                    <h5 class="resumeContentTextBold">
+                      Department of Natural and Computing Sciences, University of Aberdeen, UK
+                    </h5>
+                    <ul class="resumeContentText">
+                      <li><i class="fa fa-calendar" aria-hidden="true"></i> Sep 2022 - Dec 2022 </li>
+                      <li> Exchange programme through Erasmus with partnership between University of Aberdeen and Stockholm University </li>
+                      </ul>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-transparent" style="width:18rem; height: 18rem;">
+                    <img class="card-img-top img-fluid" src="pontu.jpg" alt="profilepicture.jpg">
+                    <p class="card-text resumeContentText">  
+                      Calm yet energetic and always willing to learn, 
+                      I do my best working together with other people in groups.<br> 
+                      I am proficient in: 
+                    </p>
+                      <ul class="resumeContentText">
+                        <li>Active Directory</li>
+                        <li>Conviva</li>
+                        <li>Figma</li>
+                        <li>Flutter (and Dart)</li>
+                        <li>Java</li>
+                        <li>LaTeX</li>
+                        <li>SQL</li>
+                      </ul>
+                      <p class="card-text resumeContentText">  
+                        You can reach me at the following: <br> 
+                        <i class="fa fa-envelope" aria-hidden="true"></i> phenningsson@me.com <br>
+                        <i class="fa fa-phone" aria-hidden="true"></i> +46(0)703814479 <br>
+                        <i class="fa fa-home" aria-hidden="true"></i> Borensvägen 8, Årsta, Stockholm, Sweden<br>
+                        <i class="fa fa-heart" aria-hidden="true"></i> Social Media listed at the <a href="#top">top of the page</a> <br>
+                        <!-- the above link to the top of the page button was created by using the example from Stackoverflow: 
+                          https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only-->
+                        <i class="fa fa-comment" aria-hidden="true"></i> Want to chat? <a class="resumeContentText" href="chat.html">Press me!</a>
+                      </p>
+                </div>
+            </div>
+        </div>
+        <h3 class="contentHeaderText">How was this website created?</h3>
+        <p class="resumeContentText">
+          This website was created with a clean and straightforward design in mind. The usage of the nature-background sets the scene 
+          for the website and is centered around it. Using a color picker from the background image, a suitable color was selected for 
+          the footer and navigation bar to make them stand out while still fitting in nicely with the background. 
+          The white text with the arial, verdana, font gives the user a sense of familiarity with familiar colors and a 
+          standard font the user has most likely encountered before. The website is built using HTML, CSS, JavaScript as well with node.js,
+           socket.io & express with server-client communication enabled through socket.io. Want to know more? Read the submission report at README.md. 
+        </p>
+    </div>
+
+    <footer class="navbar navbar-expand-sm justify-content-center">
+        <p class="navTextStyle">
+          Free to Use Photo by
+          <a href="https://unsplash.com/@dbr0vskyi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Yevhenii Dubrovskyi</a> on <a href="https://unsplash.com/images/stock/public-domain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                  Unsplash</a>
+        </p>
+      </footer>
+    </body>
+  </html>
+  

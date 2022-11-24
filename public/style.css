@@ -1,0 +1,154 @@
+        /* this custom class of navbar overrides Bootstraps default navbar class for css. This is in order to make the navbar fit the 
+        overall design color-wise as well as added some padding to make it sit better on the website. 
+        The footer uses this as well since it only changes the navigationbar color and padding which is the same
+        for both Navigation bar at the top of the page and the footer at the bottom */
+.navbar
+{
+  background: #92b2be;
+  padding: 10px;
+}
+
+.navTextStyle /* Custom CSS that sets the text style for the navigation bar. Used in both Navigation bar and Footer */
+{
+  font-family: verdana, arial;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.active /*sets the color for the active page that you're currently visiting. For instance if your on the "About"-page,
+        the About page text on the navigation bar will be grey to make navigation easier */
+{
+  color: grey;
+}
+
+body, html /*setting both the <body> and <html> to 100% height in order to make the .backgroundImage fit properly */
+{
+    height: 100%;
+}
+
+.backgroundImage /* custom class for the background image */
+{
+    background-image: url(ca4background.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: repeat-y; /* to make background follow the chat if the chat is really long */
+    background-size: cover;
+}
+
+/* .contentText sets the text fonts, placement etc for the text on the start page (index.html) as well as parts of the chat page */
+.contentText
+{
+  font-family: verdana, arial;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;  
+  text-align: center;
+}
+
+/* .contentHeaderText sets the text fonts, placement etc for the headers on the start page (index.html) as well as parts of the chat page  */
+.contentHeaderText
+{
+    font-family: verdana, arial;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+/* .resumeHeaderText sets the text fonts placement etc for the headers on the about page (index.html)  */
+.resumeHeaderText
+{
+  font-family: verdana, arial;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 5%;
+ 
+}
+
+
+/* .resumeContentText sets the text fonts, placement etc for the text on the about page */
+.resumeContentText
+{
+  font-family: verdana, arial;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;  
+  text-align: left;
+}
+
+  /* .resumeContentTextBold sets the text fonts, placement in BOLD for the text on the about page, could have used <strong>
+  or another tag that makes letters bold in the html code but prefer doing it in CSS as its own class */
+.resumeContentTextBold
+{
+  font-family: verdana, arial;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;  
+  text-align: left;
+
+}
+
+
+/* background of the columns (columnBG), first set as background-color: #000 and then the background-color with RGBA in order 
+to support older browsers that do not support CSS3 (and therefore RGBA), this got rid of the CSS validation error.
+Helped by using this stackoverflow thread: https://stackoverflow.com/questions/17057005/why-does-a-css-hsl-assignment-require-a-fallback-color  */
+.columnBG
+{ 
+  background-color: #000;
+  background-color: rgba(146, 178, 190, .25);
+  border-color: #92b2be; 
+}
+/* Overrides the default bootstrap card-class CSS settings and adding some padding on the top to leave some space between
+ the card and the navigation bar as well as removing the border around the card to make it sit better with the background  */
+.card 
+{
+  padding-top: 5%;
+  border: none;
+}
+
+/* Customizes the button to make the button rounded with a transparent background and white text */
+.button
+{
+  border-radius: 5px; /*to make the button rounded */
+  background-color: transparent;
+  color: white;
+}
+
+/* Added padding to make elements with thw formStyle class applied have sensible padding and sit better together */
+.formStyle
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Sets the font style, placement etc, for some of the headers on the Chat page */
+.chatHeaderText
+{
+  font-family: verdana, arial;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+/* adds padding and a white border to the chatbox, making it easier to see where the chatbox starts and ends */
+.chatBox
+{
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 5px;
+}
